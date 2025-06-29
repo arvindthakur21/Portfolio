@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+  <header>
+  <nav class="navbar">
+    <div class="logo">Arvind</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">
+      &#9776;
+    </div>
+    <button id="themeToggle" title="Toggle Theme">🌓</button>
+
+  </nav>
+</header>
+
+    <section class="hero" id="home">
+  <div class="hero-content">
+    <img src="assets/profile.jpg" alt="Arvind Kumar" class="hero-img">
+    <h1>Hi, I'm <span>Arvind Kumar</span></h1>
+    <p class="job-title">Frontend Web Developer</p>
+    <div class="social-icons">
+      <a href="https://github.com/arvindthakur21" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/arvind-kumar-72a509206" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:you@example.com"><i class="fas fa-envelope"></i></a>
+    </div>
+    <a href="assets/front_resume(1).pdf" class="btn" download>Download Resume</a>
+  </div>
+</section>
+
+<section id="projects" class="projects-section">
+  <h2>My Projects</h2>
+  <div class="projects-container">
+
+    <!-- Project 1 -->
+    <div class="project-card">
+      <img src="assets/projects/project1.jpg" alt="SkillHatch App">
+      <h3>SkillHatch</h3>
+      <p>A skill barter platform where users can exchange and discover skills.</p>
+      <div class="project-links">
+        <a href="https://github.com/arvindthakur21/skillhatch" target="_blank" class="btn">GitHub</a>
+        <a href="#" target="_blank" class="btn">Live Demo</a>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+      <img src="assets/projects/project2.jpg" alt="Hello App">
+      <h3>Hello App</h3>
+      <p>Chat-based app with screen time tracking and wellness reminders.</p>
+      <div class="project-links">
+        <a href="https://github.com/arvindthakur21/helloapp" target="_blank" class="btn">GitHub</a>
+        <a href="#" target="_blank" class="btn">Live Demo</a>
+      </div>
+    </div>
+
+    <!-- Add more project cards below -->
+  </div>
+</section>
+<section id="about" class="about-section">
+  <h2>About Me</h2>
+  <div class="about-container">
+    <img src="assets/profile.jpg" alt="Arvind Kumar" class="about-img">
+    <div class="about-text">
+      <p>
+        I'm Arvind Kumar, an enthusiastic Frontend Web Developer passionate about building beautiful and functional websites using React.js, JavaScript, HTML, and CSS. I enjoy solving real-world problems and turning ideas into reality. I'm currently focused on mastering modern web technologies and contributing to open-source.
+      </p>
+      <p>
+        Beyond coding, I love exploring new tech trends, writing clean UI components, and continuously improving my craft.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="skills-section">
+  <h2>My Skills</h2>
+  <div class="skills-container">
+
+    <!-- Each skill item -->
+    <div class="skill-card">
+      <img src="assets/skills/html.jpeg" alt="HTML">
+      <p>HTML</p>
+    </div>
+
+    <div class="skill-card">
+      <img src="assets/skills/css.jpeg" alt="CSS">
+      <p>CSS</p>
+    </div>
+
+    <div class="skill-card">
+      <img src="assets/skills/js.png" alt="JavaScript">
+      <p>JavaScript</p>
+    </div>
+
+    <div class="skill-card">
+      <img src="assets/skills/react.webp" alt="React">
+      <p>React.js</p>
+    </div>
+
+    <div class="skill-card">
+      <img src="assets/skills/firebase.png" alt="Firebase">
+      <p>Firebase</p>
+    </div>
+
+    <div class="skill-card">
+      <img src="assets/skills/github.png" alt="GitHub">
+      <p>GitHub</p>
+    </div>
+
+  </div>
+</section>
+<section id="certificates" class="certificates-section">
+  <h2>My Certificates</h2>
+  <div class="certificates-container">
+
+    <!-- Certificate 1 -->
+    <div class="certificate-card">
+      <img src="assets/certificates/js-udemy.jpg" alt="Certificate 1">
+      <h3>javascript Certificate</h3>
+      <p>Issued by Udemy</p>
+      <a href="assets/certificates/js-udemy.jpg" target="_blank" class="btn small">View</a>
+    </div>
+
+    <!-- Certificate 2 -->
+    <div class="certificate-card">
+      <img src="assets/certificates/nptl.jpg" alt="Certificate 2">
+      <h3>NPTL Cartificate</h3>
+      <p>Issued by Swayam</p>
+      <a href="assets/certificates/nptl.jpg" target="_blank" class="btn small">View</a>
+    </div>
+
+     <div class="certificate-card">
+      <img src="assets/certificates/स्क्रीनशॉट 2025-06-28 220516.png" alt="Certificate 2">
+      <h3>Java-Buisness Application</h3>
+      <p>Issued by IIT Bombay</p>
+      <a href="assets/certificates/स्क्रीनशॉट 2025-06-28 220516.png" target="_blank" class="btn small">View</a>
+    </div>
+
+    <!-- Add more certificates below -->
+    
+  </div>
+</section>
+
+<section id="internships" class="internship-section">
+  <h2>Internship</h2>
+  <div class="internship-container">
+
+    <!-- Internship 1 -->
+    <div class="internship-card">
+      <img src="assets/internships/IMG_20240709_192055.jpg" alt="Internship Certificate 1">
+      <h3>Web Development Intern</h3>
+      <p>Issued by CodeSoft</p>
+      <a href="assets/internships/IMG_20240709_192055.jpg" target="_blank" class="btn small">View Certificate</a>
+    </div>
+
+    <!-- Internship 2 -->
+    <div class="internship-card">
+      <img src="assets/internships/acmegrade-tarning-complete.jpg" alt="Internship Certificate 2">
+      <h3>acmegrade</h3>
+      <p>Issued by IIT Bombay</p>
+      <a href="assets/internships/acmegrade-tarning-complete.jpg" target="_blank" class="btn small">View Certificate</a>
+    </div>
+
+    <!-- Add more internship cards as needed -->
+
+  </div>
+</section>
+
+
+<button id="backToTop" title="Go to top">↑</button>
+
+<section id="contact" class="contact-section">
+  <h2>Contact Me</h2>
+  <p>Have a project in mind or just want to say hello? Fill out the form below.</p>
+
+  <form action="https://formspree.io/f/xblyqqrz" method="POST" class="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="_replyto" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+    <p class="footer-text">
+      &copy; <span id="year"></span> <strong>Arvind Kumar</strong> — Designed & Developed with ❤️
+    </p>
+
+    <div class="footer-socials">
+      <a href="https://github.com/arvindthakur21" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/arvind-kumar-72a509206" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:you@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+
+    <div class="back-to-top-footer">
+      <a href="#home" class="btn large">⬆ Back to Top</a>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
